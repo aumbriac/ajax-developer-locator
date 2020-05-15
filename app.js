@@ -67,6 +67,7 @@ ${repo.language ? repo.language : 'N/A'}
      repo.html_url
     }" target="_blank"><i class="material-icons">link</i></a>
 <a class="truncate" target="_blank" href="${repo.html_url}">${repo.html_url}</a>
+
 </div>
 </div>
 </div>
@@ -85,7 +86,7 @@ ${repo.language ? repo.language : 'N/A'}
   error: function () {
    document.getElementById(
     'root'
-   ).innerHTML = `<h3 class="center">No repos found for '${username}'</h3>`;
+   ).innerHTML = `<h3 class="center flow-text">No repos found for '${username}'</h3>`;
    document.getElementById('user-image').src = 'github-logo.png';
   },
   complete: function () {
