@@ -94,3 +94,9 @@ ${repo.language ? repo.language : 'N/A'}
   },
  });
 });
+
+$('body').on('keypress', function (e) {
+ if (e.keyCode === 13) {
+  $('button').click();
+ }
+});
