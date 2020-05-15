@@ -67,7 +67,6 @@ ${repo.language ? repo.language : 'N/A'}
      repo.html_url
     }" target="_blank"><i class="material-icons">link</i></a>
 <a class="truncate" target="_blank" href="${repo.html_url}">${repo.html_url}</a>
-
 </div>
 </div>
 </div>
