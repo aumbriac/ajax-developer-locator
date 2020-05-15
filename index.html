@@ -23,17 +23,17 @@
         <h3 class="center">Github Repo Finder</h3>
         <div class="card" style="padding: .5rem;">
             <div class="row">
-                <img class="responsive-image circle z-depth-3" id="user-image" src="github-logo.png">
+                <a target="" id="avatar-link" href="#!"><img class="responsive-image circle z-depth-3" style="margin-top:1.25rem" id="user-image" src="github-logo.png"></a>
                 <div class="container">
                     <div class="input-field col s12">
-                        <input placeholder="Github Username" id="username" type="text">
+                        <input placeholder="Enter A Github Username" id="username" type="text">
                         <label for="username">Github Username</label>
                         <button style="margin-top: 1rem" class="waves-effect blue darken-2 waves-light btn">Find!</button>
                     </div>
                 </div>
             </div>
             <h3 class="center" id="user-info"></h3>
-            <div id="loader"></div>
+            <div class="container" id="loader"></div>
             <div id="root"></div>
 
     </main>
