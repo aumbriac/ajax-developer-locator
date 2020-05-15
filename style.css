@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+ main.container {
+  width: 100% !important;
+ }
+}
+
+.chip {
+ color: #fff;
+}
+
+main.container {
+ width: 50%;
+}
+
+#user-image {
+ display: block;
+ max-width: 430px;
+ max-height: 160px;
+ width: auto;
+ height: auto;
+ margin: auto;
+}
+
+.progress {
+ background-color: lightgrey !important;
+}
+
+.indeterminate {
+ background-color: dodgerblue !important;
+}
+
+.input-field input:focus + label {
+ color: dodgerblue !important;
+}
+
+.row .input-field input:focus {
+ border-bottom: 1px solid dodgerblue !important;
+ box-shadow: 0 1px 0 0 dodgerblue !important;
+}

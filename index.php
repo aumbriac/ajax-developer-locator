@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Repo Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue darken-3 valign-wrapper">
+            <a href="#" style="font-size:1.25rem; font-weight: light;" class="brand-logo right"><i class="material-icons right">code</i></a>
+            <h6 class="left" style="margin-left: 1rem;">
+                <span>GitHub Repo Finder</span>
+            </h6>
+        </div>
+    </nav>
+    <main class="container">
+        <h3 class="center">Github Repo Finder</h3>
+        <div class="card" style="padding: .5rem;">
+            <div class="row">
+                <img class="responsive-image circle z-depth-3" id="user-image" src="github-logo.png">
+                <div class="container">
+                    <div class="input-field col s12">
+                        <input placeholder="Github Username" id="username" type="text">
+                        <label for="username">Github Username</label>
+                        <button style="margin-top: 1rem" class="waves-effect blue darken-2 waves-light btn">Find!</button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="center" id="user-info"></h3>
+            <div id="loader"></div>
+            <div id="root"></div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
