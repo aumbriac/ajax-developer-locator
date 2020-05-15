@@ -1,8 +1,11 @@
 $('button').click(function () {
+ $('#avatar-link').attr('href', '#!');
+ $('#avatar-link').attr('target', '');
  $('#root').html('');
  $('#user-info').html('');
  var username = $('#username').val();
  if (username === '') {
+  document.getElementById('user-image').src = 'github-logo.png';
   return alert('Please enter a Github username');
  }
 
@@ -71,6 +74,8 @@ ${repo.language ? repo.language : 'N/A'}
 </div>
   `;
     div.style.padding = '1rem';
+    $('#avatar-link').attr('href', `${repo.owner.html_url}`);
+    $('#avatar-link').attr('target', '_blank');
     document.getElementById('root').appendChild(div);
     document.getElementById('user-image').src = `${repo.owner.avatar_url}`;
     document.getElementById(
