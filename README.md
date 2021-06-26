@@ -1,2 +1,3 @@
-# Github Finder
-Live example: https://anthonyumbriac.com/ghf
+# Ajax Developer Locator
+
+Obtains Github user data using Ajax. Simply open index.html to use.
